@@ -1,0 +1,248 @@
+body{
+    /*background-image: url(../img/farm.png);*/
+    margin:0px;
+    padding:0px;
+    background-size:100%;
+}
+
+.outBox{
+    margin: 0 10% 0 10%;
+    /*background-color: red;*/
+    width: 80%;
+    height: 850px;
+}
+
+.header{
+    background-color: green;
+    width: 100%;
+    height: 100px;
+}
+
+.title{
+    margin: 10px 0 0 0;
+    background-color: green;
+    width: 100%;
+    height: 70px;
+}
+.message{
+    margin: 10px 0 0 0;
+    /*background-color: green;*/
+    width: 100%;
+
+}
+.scroll_img{
+    background-color: pink;
+    width: 40%;
+    height: 400px;
+    display: inline-block;
+}
+.information1{
+    background-color: gray;
+    width: 30%;
+    display: inline-block;
+    margin-left: -60px;
+    font-family: 'Varela Round', cursive;
+}
+.information2{
+    background-color: gray;
+    width: 25%;
+    display: inline-block;
+    margin-left: 10px;
+    position: relative;
+    right: -32px;
+    font-family: 'Varela Round', cursive;
+}
+.footer{
+    background-color: rgba(53,53,53,0.8);
+    width: 100%;
+    height: 210px;
+    margin: 40px 0 0 0;
+}
+.listTile{
+    width: 100%;
+    height: 40px;
+    background-color: rgba(225,225,225,1);
+    box-shadow: 0px 2px 35px black;
+}
+.littlePic{
+    margin-top: 10px;
+    width: 60%;
+    height: 130px;
+    /*background-color: blue;*/
+    display: inline-block;
+}
+
+.picTalk{
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 35%;
+    height: 130px;
+    /*background-color: orange;*/
+    display: inline-block;
+}
+.comment{
+    width: 100%;
+    background-color: rgba(225,225,225,1);
+    height: 190px;
+    margin-top: 6px;
+}
+.about{
+    width: 30%;
+    height: 180px;
+    /*background-color: green;*/
+    margin: 10px 5px 10px 110px;
+    position: relative;
+    top: -3px;
+    font-family: 'Varela Round', cursive;
+    display: inline-block;
+}
+.photo{
+    width: 30%;
+    height: 180px;
+    /*background-color: green;*/
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    font-family: 'Varela Round', cursive;
+    margin-left: 30px;
+
+}
+.qqPic{
+    width: 80px;
+    height: 80px;
+    background-color: rgba(64,64,64,0.7);
+    position: absolute;
+}
+#pic1{
+     position: relative;
+    margin-left: 125px;
+    margin-top: 5px;
+ }
+#pic2{
+    position: relative;
+    margin-left: 217px;
+    margin-top: -80px;
+}
+#pic3{
+    position: relative;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+#pic4{
+     position: relative;
+     margin-left: 125px;
+     margin-top: -80px;
+ }
+#pic5{
+    position: relative;
+    margin-left: 217px;
+    margin-top: -80px;
+}
+.content2{
+    position: absolute;
+    margin-left: 10px;
+}
+#c1{
+  margin-top: 10px;
+}
+#c2{
+   margin-top: 40px;
+}
+#c3{
+    margin-top: 70px;
+}
+#c4{
+    margin-top: 100px;
+}
+
+#c5{
+    margin-top: 10px;
+}
+#c6{
+    margin-top: 40px;
+}
+#c7{
+    margin-top: 70px;
+}
+#c8{
+    margin-top: 100px;
+}
+
+span{
+    background-color: rgba(222,222,222,1);
+    border-radius: 4px;
+}
+span :hover{
+    background-color: white;
+    border-radius: 4px;
+}
+a{
+    text-decoration: none;
+}
+#loginBtn{
+    border-radius: 5px;
+    width: 152px;
+    height: 46px;
+    background-color:rgba(0,0,0,0.7);
+    color: white;
+    position: relative;
+    left: 902px;
+    cursor:pointer;
+    transform: scale(1,1);position:relative;top: -337px;margin-left: -27px
+}
+#loginBtn:hover{
+    border-radius: 5px;
+    width: 152px;
+    height: 46px;
+    background-color:rgba(217,83,79,0.7);
+    color: white;
+    position: relative;
+    left: 902px;
+    cursor:pointer;
+    transform: scale(1,1);position:relative;top: -337px;margin-left: -27px
+}
+#registBtn{
+    border-radius: 5px;
+    width: 152px;
+    height: 46px;
+    background-color:rgba(0,0,0,0.7);
+    color: white;
+    position: relative;
+    left: 190px;
+    top: -60px;
+    cursor:pointer;
+    transform: scale(1,1);position:relative;top: -397px;margin-left: 860px
+}
+#registBtn:hover{
+    border-radius: 5px;
+    width: 152px;
+    height: 46px;
+    background-color:rgba(217,83,79,0.7);
+    color: white;
+    position: relative;
+    left: 190px;
+    top: -60px;
+    cursor:pointer;
+    transform: scale(1,1);position:relative;top: -397px;margin-left: 860px
+}
+.BtnFont{
+    font-size: 15px;
+    padding-left: 60px;
+    padding-top: 13px;
+}
+.warden{
+    background-color: green;
+    width: 80px;
+    height: 10px;
+    transition-duration: 1s;
+    border-radius: 6px;
+    position: absolute;
+}
+.warden:hover{
+    width: 80px;
+    height: 100px;
+    background-color: green;
+    transition-duration: 1s;
+    border-radius: 6px;
+    position: absolute;
+}

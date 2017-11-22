@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- Jquery在BOOTSTRAP前引用 -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous">
+    </script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #container{
+            margin-left: auto;
+            margin-right: auto;
+            width: 300px;
+            height: 400px;
+            background: rgba(255,255,255,0.7);
+            position: relative;
+            margin-top: 100px;
+            border-radius: 8px;
+        }
+        #head{
+            width: 300px;
+            height: 50px;
+            background-color: rgba(0,0,0,0.7);
+            border-radius: 8px 8px 0 0 ;
+        }
+        #title{
+            color: #FFFFFF;
+            padding: 15px 110px;
+            font-size: 18px;
+        }
+        table{
+            margin-top: 30px;
+        }
+        input{
+            width: 272px;
+            height: 40px;
+            border-radius: 4px;
+            border: none;
+            border: 1px rgba(0,0,0,0.5) solid;
+            font-size: 16px;
+            padding: 0 10px;
+        }
+        tr td {
+            display: block;
+        }
+        tr{
+            display: block;
+            margin: 13px;
+        }
+        #registBtn{
+            border-radius: 5px;
+            width: 90px;
+            height: 35px;
+            background-color:rgba(0,0,0,0.7);
+            color: white;
+            position: relative;
+            left: 195px;
+            top: 28px;
+            cursor:pointer;
+        }
+        .BtnFont{
+            font-size: 15px;
+            padding-left: 32px;
+            padding-top: 8px;
+        }
+    </style>
+</head>
+<body background="images/regist_background.png">
+<div id="container">
+    <div id="head">
+        <p id="title">用户登录</p>
+    </div>
+    <div id="body">
+        <table>
+            <tr><td>用户名:</td></tr>
+            <tr><td><input type="text"></td></tr>
+            <tr><td>密码:</td></tr>
+            <tr><td><input type="password"></td></tr>
+        </table>
+        <div id="registBtn"><p class="BtnFont">登录</p></div>
+        <div id="tip" style="font-size: 15px;margin-left: 30px;margin-top: 0px">
+            <a href="#" style="color: rgba(217,83,79,1)">忘记密码</a>|<a href="index.html" style="color:rgba(217,83,79,1);">主页</a>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    var registBtn = document.getElementById("registBtn");
+    registBtn.onmouseover = function () {
+        registBtn.style.backgroundColor = "rgba(217,83,79,1)";
+    }
+    registBtn.onmouseout = function () {
+        registBtn.style.backgroundColor = "rgba(0,0,0,0.7)";
+    }
+</script>
+</html>

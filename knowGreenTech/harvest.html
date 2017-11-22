@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>植物的长势</title>
+    <style>
+        body{
+            font-family: 'Varela Round', cursive;
+        }
+        .title{
+
+        }
+        input{
+            width: 180px;
+            height: 30px;
+            border-radius: 7px;
+            border: none;
+            border: 1px solid gray;
+        }
+        .input1{
+            /*width: 120px;*/
+            /*height: 30px;*/
+            /*border-radius: 7px;*/
+            /*border: none;*/
+            /*border: 1px solid gray;*/
+            margin-left: 50px;
+            display: inline-block;
+        }
+        /*.input1:hover{*/
+          /**/
+        /*}*/
+        .search1{
+            display: inline-block;
+            margin-left: 200px;
+            margin-top: 20px;
+        }
+        .search2{
+            display: inline-block;
+            margin-left: 20px;
+        }
+        .content{
+            /*background-color: red;*/
+            width: 1200px;
+            height: 550px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        img{
+            transform: scale(0.3,0.3);
+            position: absolute;
+        }
+        .f1{
+            margin: -80px 0 0 -151px;
+        }
+        .f2{
+            margin: -80px 0 0 210px;
+        }
+        .f3{
+            margin: -80px 0 0 360px;
+        }
+        .f4{
+            margin: 160px 0 0 -151px;
+        }
+        .f5{
+            margin: 160px 0 0 210px;
+        }
+        .f6{
+            margin: 160px 0 0 360px;
+        }
+        #right1{
+            margin: 57px 0 0 330px;
+        }
+        #right2{
+            margin: 57px 0 0 694px;
+        }
+        #down{
+            margin: 178px 0 0 881px;
+        }
+        #left1{
+            margin: 300px 0 0 693px;
+        }
+        #left2{
+            margin: 300px 0 0 328px;
+        }
+    </style>
+</head>
+<body background="images/bgpic.jpg">
+    <div class="container">
+        <div class="header">
+            <div class="title">
+                <p style="text-align: center;font-family: 'Varela Round', cursive;font-size: 25px">植物的长势情况</p>
+            </div>
+            <div class="search1">
+                <div style="display: inline-block"><p style="font-family: 'Varela Round', cursive">购买农作物的原料地(厂商)</p></div>
+                <div style="display: inline-block"><input type="text" placeholder="&nbsp;&nbsp;&nbsp;请填写厂商"></div>
+            </div>
+            <div class="search2">
+                <div style="display: inline-block"><p style="font-family: 'Varela Round', cursive">查看的作物生长的时间段(填写格式:XX月)</p></div>
+                <div style="display: inline-block"><input type="text" placeholder="&nbsp;&nbsp;&nbsp;请填写日期"></div>
+            </div>
+            <div class="input1"><input type="button" value="确定" ></div>
+        </div>
+        <div class="content">
+           <table>
+               <tr>
+                   <td><div class="f1"><img src="images/flower1.png" alt=""></div></td>
+                   <img src="images/right.png" alt="" id="right1">
+                   <img src="images/right.png" alt="" id="right2">
+                   <img src="images/down.png" alt="" id="down">
+                   <img src="images/left.png" alt="" id="left1">
+                   <img src="images/left.png" alt="" id="left2">
+                   <td><div class="f2"><img src="images/flower2.png" alt=""></div></td>
+                   <td><div class="f3"><img src="images/flower3.png" alt=""></div></td>
+               </tr>
+               <tr>
+                   <td><div class="f4"><img src="images/flower6.png" alt=""></div></td>
+                   <td><div class="f5"><img src="images/flower5.png" alt=""></div></td>
+                   <td><div class="f6"><img src="images/flower4.png" alt=""></div></td>
+               </tr>
+           </table>
+        </div>
+    </div>
+</body>
+</html>

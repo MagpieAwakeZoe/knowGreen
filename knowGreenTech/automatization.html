@@ -38,31 +38,48 @@
             position: relative;
             display: inline-block;
             /*background-color: purple;*/
-            margin-left: 250px;
+            margin-left: 100px;
+        }
+
+        .btn{
+            width: 220px;
+            height: 40px;
+            background-color: rgba(54,159,55,1);
+            font-family: 'Varela Round', cursive;
+            color: white;
+            margin: 57px 0 0 520px;
+        }
+        .refresh:hover{
+            color: red;
+            cursor: pointer;
         }
     </style>
 </head>
 <body background="images/bgpic.jpg">
+<div class="refresh"><img src="images/refresh.png" alt="" style="transform: scale(0.2,0.2);position: absolute;margin-top: -70px;margin-left: 1258px"></div>
+<div class="refresh" style="position: absolute;font-family: 'Varela Round', cursive;font-size: 20px;margin-left: 1387px;margin-top: 18px">返回首页</div>
 <div class="header">
     <p style="font-family: 'Varela Round', cursive;font-size: 36px;color: black;position: absolute;left: 600px;top: 20px">远程自动化设备控制</p>
 </div>
 <div class="container">
     <table class="tab1">
-        <tr><td><input type="text"></td></tr>
-        <tr><td><input type="text"></td></tr>
-        <tr><td><input type="text"></td></tr>
-        <tr><td><input type="text"></td></tr>
-        <tr><td><input type="text"></td></tr>
-        <tr><td><input type="text"></td></tr>
+        <tr><td>所属园区&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"></td></tr>
+        <tr><td>传感器名称&nbsp;&nbsp;<input type="text"></td></tr>
+        <tr><td>开始时间&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"></td></tr>
+        <tr><td>上限值&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"></td></tr>
+        <tr><td>关联风机&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"></td></tr>
     </table>
     <table class="tab2">
-        <tr><td><input type="text"></td></tr>
-        <tr><td><input type="text"></td></tr>
-        <tr><td><input type="text"></td></tr>
-        <tr><td><input type="text"></td></tr>
-        <tr><td><input type="text"></td></tr>
-        <tr><td><input type="text"></td></tr>
+        <tr><td>所属大棚&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"></td></tr>
+        <tr><td>传感器类型&nbsp;&nbsp;<input type="text"></td></tr>
+        <tr><td>结束时间&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"></td></tr>
+        <tr><td>下限值&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"></td></tr>
+        <tr><td>执行时间&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"></td></tr>
     </table>
+
+    <div>
+        <input type="button" class="btn" value="保存">
+    </div>
 </div>
 </body>
 </html>

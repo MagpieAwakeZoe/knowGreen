@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <title>棚内环境监测(实时)</title>
     <style>
-        .container{
+        .container {
             margin: 140px 0 0 120px;
             /*background-color: black;*/
             width: 790px;
         }
-        .container2{
+
+        .container2 {
             margin-left: 180px;
         }
-        .littleBlock{
+
+        .littleBlock {
             width: 240px;
             height: 160px;
             background-color: white;
@@ -21,35 +23,60 @@
             box-shadow: 4px 4px 15px gray;
             overflow: hidden;
         }
-        .title{
+
+        .title {
             position: absolute;
             font-size: 32px;
             font-family: 'Varela Round', cursive;
             margin: -80px 0 0 650px;
         }
-        .bar{
+
+        .bar {
             width: 250px;
             height: 50px;
             /*background-color: red;*/
 
         }
-        .bar1{margin: -563px 0 0 900px;}
-        .bar2{margin: -493px 0 0 935px;}
-        .bar3{margin: -413px 0 0 960px;}
-        .bar4{margin: -333px 0 0 990px;}
-        .bar5{margin: -253px 0 0 960px;}
-        .bar6{margin: -173px 0 0 935px;}
-        .bar7{margin: -93px 0 0 900px;}
-        .ball{
+
+        .bar1 {
+            margin: -563px 0 0 900px;
+        }
+
+        .bar2 {
+            margin: -493px 0 0 935px;
+        }
+
+        .bar3 {
+            margin: -413px 0 0 960px;
+        }
+
+        .bar4 {
+            margin: -333px 0 0 990px;
+        }
+
+        .bar5 {
+            margin: -253px 0 0 960px;
+        }
+
+        .bar6 {
+            margin: -173px 0 0 935px;
+        }
+
+        .bar7 {
+            margin: -93px 0 0 900px;
+        }
+
+        .ball {
             position: absolute;
             width: 48px;
             height: 48px;
-            border:1px solid green;
+            border: 1px solid green;
             border-radius: 45px;
             background-color: white;
             z-index: 2;
         }
-        .bg{
+
+        .bg {
             position: absolute;
             width: 190px;
             height: 40px;
@@ -59,62 +86,156 @@
             border-radius: 5px;
             border: 1px solid white;
         }
-        .bg1{background-color: rgba(79,145,26,1);}
-        .bg2{background-color: rgba(102,157,26,1);}
-        .bg3{background-color: rgba(132,172,26,1);}
-        .bg4{background-color: rgba(164,183,24,1);}
-        .bg5{background-color: rgba(203,196,21,1);}
-        .bg6{background-color: rgba(224,195,19,1);}
-        .bg7{background-color: rgba(236,180,22,1);}
 
-        span{
+        .bg1 {
+            background-color: rgba(79, 145, 26, 1);
+        }
+
+        .bg2 {
+            background-color: rgba(102, 157, 26, 1);
+        }
+
+        .bg3 {
+            background-color: rgba(132, 172, 26, 1);
+        }
+
+        .bg4 {
+            background-color: rgba(164, 183, 24, 1);
+        }
+
+        .bg5 {
+            background-color: rgba(203, 196, 21, 1);
+        }
+
+        .bg6 {
+            background-color: rgba(224, 195, 19, 1);
+        }
+
+        .bg7 {
+            background-color: rgba(236, 180, 22, 1);
+        }
+
+        span {
             color: white;
             position: relative;
             z-index: 3;
-            margin-left:92px;
+            margin-left: 92px;
             top: 14px;
             font-size: 18px;
         }
-        .refresh:hover{
+
+        .refresh:hover {
             color: red;
             cursor: pointer;
         }
     </style>
 </head>
 <body background="images/bgpic.jpg">
-<div class="refresh"><img src="images/refresh.png" alt="" style="transform: scale(0.2,0.2);position: absolute;margin-top: -207px;margin-left: 1225px"></div>
-<div class="refresh" style="position: absolute;font-family: 'Varela Round', cursive;font-size: 20px;margin-left: 1362px;margin-top: -120px">返回首页</div>
+<div class="refresh"><img src="images/refresh.png" alt=""
+                          style="transform: scale(0.2,0.2);position: absolute;margin-top: -207px;margin-left: 1225px">
+</div>
+<div class="refresh"
+     style="position: absolute;font-family: 'Varela Round', cursive;font-size: 20px;margin-left: 1362px;margin-top: -120px">
+    返回首页
+</div>
 <div class="title">大棚环境实时监测</div>
-    <div class="container">
-        <table>
-            <tr>
-                <td><div class="littleBlock"><img src="images/1.1.png" alt="" id="b1"></div></td>
-                <td><div class="littleBlock"><img src="images/2.1.png" alt="" id="b2"></div></td>
-                <td><div class="littleBlock"><img src="images/3.1.png" alt="" id="b3"></div></td>
-            </tr>
-            <tr>
-                <td><div class="littleBlock"><img src="images/4.1.png" alt=""></div></td>
-                <td><div class="littleBlock"><img src="images/5.1.png" alt=""></div></td>
-                <td><div class="littleBlock"><img src="images/6.1.png" alt=""></div></td>
-            </tr>
-            <tr>
-                <td><div class="littleBlock"><img src="images/7.1.png" alt="" id="b7"></div></td>
-                <td><div class="littleBlock"><img src="images/8.1.png" alt=""></div></td>
-                <td><div class="littleBlock"><img src="images/9.1.png" alt=""></div></td>
-            </tr>
-        </table>
-    </div>
-    <div class="container2">
-        <table style="position: absolute;">
-            <tr><td><div class="bar bar1"><div class="ball ball1"></div><div class="bg bg1"></div><span>光照</span></div></td></tr>
-            <tr><td><div class="bar bar2"><div class="ball ball2"></div><div class="bg bg2"></div><span>空气温度</span></div></td></tr>
-            <tr><td><div class="bar bar3"><div class="ball ball3"></div><div class="bg bg3"></div><span>空气湿度</span></div></td></tr>
-            <tr><td><div class="bar bar4"><div class="ball ball4"></div><div class="bg bg4"></div><span>土壤PH值</span></div></td></tr>
-            <tr><td><div class="bar bar5"><div class="ball ball5"></div><div class="bg bg5"></div><span>二氧化碳含量</span></div></td></tr>
-            <tr><td><div class="bar bar6"><div class="ball ball6"></div><div class="bg bg6"></div><span>土壤温度</span></div></td></tr>
-            <tr><td><div class="bar bar7"><div class="ball ball7"></div><div class="bg bg7"></div><span>土壤湿度</span></div></td></tr>
-        </table>
-    </div>
+<div class="container">
+    <table>
+        <tr>
+            <td>
+                <div class="littleBlock"><img src="images/1.1.png" alt="" id="b1"></div>
+            </td>
+            <td>
+                <div class="littleBlock"><img src="images/2.1.png" alt="" id="b2"></div>
+            </td>
+            <td>
+                <div class="littleBlock"><img src="images/3.1.png" alt="" id="b3"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="littleBlock"><img src="images/4.1.png" alt=""></div>
+            </td>
+            <td>
+                <div class="littleBlock"><img src="images/5.1.png" alt=""></div>
+            </td>
+            <td>
+                <div class="littleBlock"><img src="images/6.1.png" alt=""></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="littleBlock"><img src="images/7.1.png" alt="" id="b7"></div>
+            </td>
+            <td>
+                <div class="littleBlock"><img src="images/8.1.png" alt=""></div>
+            </td>
+            <td>
+                <div class="littleBlock"><img src="images/9.1.png" alt=""></div>
+            </td>
+        </tr>
+    </table>
+</div>
+<div class="container2">
+    <table style="position: absolute;">
+        <tr>
+            <td>
+                <div class="bar bar1">
+                    <div class="ball ball1"></div>
+                    <div class="bg bg1"></div>
+                    <span>光照</span></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="bar bar2">
+                    <div class="ball ball2"></div>
+                    <div class="bg bg2"></div>
+                    <span>空气温度</span></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="bar bar3">
+                    <div class="ball ball3"></div>
+                    <div class="bg bg3"></div>
+                    <span>空气湿度</span></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="bar bar4">
+                    <div class="ball ball4"></div>
+                    <div class="bg bg4"></div>
+                    <span>土壤PH值</span></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="bar bar5">
+                    <div class="ball ball5"></div>
+                    <div class="bg bg5"></div>
+                    <span>二氧化碳含量</span></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="bar bar6">
+                    <div class="ball ball6"></div>
+                    <div class="bg bg6"></div>
+                    <span>土壤温度</span></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="bar bar7">
+                    <div class="ball ball7"></div>
+                    <div class="bg bg7"></div>
+                    <span>土壤湿度</span></div>
+            </td>
+        </tr>
+    </table>
+</div>
 </body>
 <script>
     function change() {
@@ -129,7 +250,7 @@
 
     }
 
-    var timer = setTimeout(change,2000);
+    var timer = setTimeout(change, 2000);
 
 </script>
 </html>

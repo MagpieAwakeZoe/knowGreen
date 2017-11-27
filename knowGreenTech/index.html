@@ -12,12 +12,10 @@
 </head>
 <body background="images/bgpic.jpg">
 <div class="warden" id="warden">
-    <div><p style="font-family: 'Varela Round', cursive;padding-top: 60px;color: white"><a href="warden.html"
-                                                                                           style="text-decoration: none;color: white;display: block"
-                                                                                           id="wardenLogin">管理员登录</a>
+    <div><p style="font-family: 'Varela Round', cursive;padding-top: 60px;color: white">
+        <a href="warden.html" style="text-decoration: none;color: white;display: block;opacity: 0;color: white" id="wardenLogin">管理员登录</a>
     </p></div>
-    <div><img src="images/logo.png" alt=""
-              style="transform: scale(0.1,0.1);margin-left: -238px;margin-top: -360px;display: block" id="logoImg">
+    <div><img src="images/logo.png" alt="" style="transform: scale(0.1,0.1);margin-left: -238px;margin-top: -360px;opacity: 0" id="logoImg">
     </div>
 </div>
 <div class="outBox">
@@ -38,8 +36,10 @@
         </div>
     </div>
     <div class="title">
-        <a href="Qr%20code.html"><img src="images/知绿科技二维码.png" alt=""
-                                      style="position: absolute;transform: scale(0.2,0.2);margin: -116px 0 0 1021px"></a>
+        <div class="marquee" style="width: 90%;font-family: 'Varela Round', cursive;font-size: 25px;color: white;padding-top: 20px;padding-left: 20px">
+        <marquee class="noticeText ng-binding" direction="right" behavior="alternate" scrollamount="100" scrolldelay="1000" loop="1000" width="600px" onmouseover="this.stop();" onmouseout="this.start();"  style="width: 100%;">欢迎来到智慧农业网站，本网站提供最新的农产品动态，你想要的信息尽在智慧农业</marquee>
+        </div>
+        <a href="Qr%20code.html"><img src="images/知绿科技二维码.png" alt="" style="position: absolute;transform: scale(0.2,0.2);margin: -165px 0 0 1021px"></a>
     </div>
     <div class="message" style=" height: 381px;">
         <div class="scroll">
@@ -78,8 +78,8 @@
             </div>
         </div>
         <div class="information1" style=" height: 381px;">
-            <div class="listTile">
-                <p style="position: absolute;margin-left: 5px;margin-top: 10px;font-size: 18px"><b>实时状态查询</b></p>
+            <div class="listTile" style="border-radius: 6px 6px 0 0">
+                <p style="position: absolute;margin-left: 5px;margin-top: 10px;font-size: 18px"><b style="color: white">实时状态查询</b></p>
             </div>
             <div class="littlePic">
                 <img src="images/little2.png" alt="" style="transform: scale(0.87,1);margin-left: -16px">
@@ -91,7 +91,7 @@
                 <span class="content2" id="c8"><a
                         href="messageBoard.html"><b>评&nbsp;&nbsp;论&nbsp;&nbsp;专&nbsp;&nbsp;区</b></a></span>
             </div>
-            <div class="comment">
+            <div class="comment" style="border-radius: 0 0 6px 6px">
                 <ul style="position: absolute;list-style-type: none;margin-top: 8px;font-size: 13px">
                     <li>蔬菜大棚的温度变化趋势表(早6：30-晚9：30)</li>
                     <hr>
@@ -104,14 +104,13 @@
                     <li>蔬菜大棚的施肥情况(春-夏季)</li>
                     <hr>
                     <li>蔬菜大棚的施肥情况(秋-冬季)</li>
-                    <hr>
 
                 </ul>
             </div>
         </div>
         <div class="information2" style=" height: 381px;">
-            <div class="listTile">
-                <p style="position: absolute;left: 5px;top: -7px;font-size: 18px"><b>智慧农业的体现</b></p>
+            <div class="listTile" style="border-radius: 6px 6px 0 0">
+                <p style="position: absolute;left: 5px;top: -7px;font-size: 18px"><b style="color: white">智慧农业的体现</b></p>
             </div>
             <div class="littlePic">
                 <img src="images/little1.png" alt="" style="transform: scale(0.75,1);margin-left: -31px">
@@ -122,7 +121,7 @@
                 <span class="content2" id="c3"><a href="environment.html"><b>环&nbsp;境&nbsp;监&nbsp;控</b></a></span>
                 <span class="content2" id="c4"><a href=""><b>食&nbsp;品&nbsp;安&nbsp;全</b></a></span>
             </div>
-            <div class="comment">
+            <div class="comment" style="border-radius: 0 0 6px 6px;box-shadow: 2px 2px 12px gray">
                 <ul style="position: absolute;list-style-type: none;margin-top: 8px;font-size: 13px;margin-left: -15px">
                     <li>农业命脉强根基：大力实施节水工程</li>
                     <hr>
@@ -135,7 +134,6 @@
                     <li>智慧农业：ZSP12综合食品安全检测仪</li>
                     <hr>
                     <li>智慧农业：SY6地沟油速测仪</li>
-                    <hr>
                 </ul>
             </div>
         </div>
@@ -148,11 +146,11 @@
         </div>
         <div class="photo">
             <p style="font-size: 22px;color: rgba(170,170,170,1);position: absolute;">我们的团队</p>
-            <div class="qqPic" id="pic1"><a href=""></a></div>
-            <div class="qqPic" id="pic2"><a href=""></a></div>
-            <div class="qqPic" id="pic3"><a href=""></a></div>
-            <div class="qqPic" id="pic4"><a href=""></a></div>
-            <div class="qqPic" id="pic5"><a href=""></a></div>
+            <div class="qqPic" id="pic1"><a href=""><img src="images/qqPici01.jpg" alt=""></a></div>
+            <div class="qqPic" id="pic2"><a href=""><img src="images/qqPic02.png" alt=""></a></div>
+            <div class="qqPic" id="pic3"><a href=""><img src="images/qqPic03.png" alt=""></a></div>
+            <div class="qqPic" id="pic4"><a href=""><img src="images/qqPic04.png" alt=""></a></div>
+            <div class="qqPic" id="pic5"><a href=""><img src="images/qqPic05.png" alt=""></a></div>
         </div>
         <div class="join">
             <p style="position: absolute;font-family: 'Varela Round', cursive;color: rgba(170,170,170,1);font-size: 22px;margin: -174px 0 0 976px">
@@ -187,6 +185,21 @@
     <script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>
     <script src="/follow.js" type="text/javascript"></script>
     <script>
+            var wardenLogin = document.getElementById("wardenLogin");
+            var logoImg = document.getElementById("logoImg");
+            wardenLogin.onmouseover = function W1() {
+                wardenLogin.style.cssText = "opacity:1";
+                logoImg.style.cssText = "opacity:1";
+                logoImg.style.cssText = "margin-left:-238px;margin-top :-360px";
+                logoImg.style.transform = "scale(0.1,0.1)";
+            }
+            wardenLogin.onmouseout = function W2() {
+                wardenLogin.style.cssText = "opacity:0";
+                logoImg.style.cssText = "opacity:0";
+                logoImg.style.cssText = "margin-left:-238px;margin-top :-360px";
+                logoImg.style.transform = "scale(0.1,0.1)";
+            }
+            var timer = setTimeout(W1,2000);
     </script>
 </div>
 </body>

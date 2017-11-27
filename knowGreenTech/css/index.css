@@ -1,7 +1,7 @@
 body{
     /*background-image: url(../img/farm.png);*/
-    margin:0px;
-    padding:0px;
+    margin:0;
+    padding:0;
     background-size:100%;
 }
 
@@ -9,20 +9,24 @@ body{
     margin: 0 10% 0 10%;
     /*background-color: red;*/
     width: 80%;
-    height: 850px;
+    height: 800px;
+    background-color: rgba(230,230,230,0.7);
 }
 
 .header{
-    background-color: green;
+    /*background-color: rgba(108,186,4,1);*/
+    background: linear-gradient(rgba(51,143,11,1),rgba(108,186,4,1));
     width: 100%;
     height: 100px;
 }
 
 .title{
     margin: 10px 0 0 0;
-    background-color: green;
+    background: linear-gradient(rgba(51,143,11,1),rgba(108,186,4,1));
     width: 100%;
     height: 70px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 12px gray;
 }
 .message{
     margin: 10px 0 0 0;
@@ -35,34 +39,38 @@ body{
     width: 40%;
     height: 400px;
     display: inline-block;
+    border-radius: 6px;
+    box-shadow: 2px 2px 12px gray;
 }
 .information1{
-    background-color: gray;
+    background: linear-gradient(rgba(51,143,11,1),rgba(108,186,4,1));
     width: 30%;
     display: inline-block;
     margin-left: -60px;
     font-family: 'Varela Round', cursive;
+    border-radius: 6px;
 }
 .information2{
-    background-color: gray;
+    background: linear-gradient(rgba(51,143,11,1),rgba(108,186,4,1));
     width: 25%;
     display: inline-block;
     margin-left: 10px;
     position: relative;
     right: -32px;
     font-family: 'Varela Round', cursive;
+    border-radius: 6px;
 }
 .footer{
     background-color: rgba(53,53,53,0.8);
     width: 100%;
     height: 210px;
-    margin: 40px 0 0 0;
+    margin: 20px 0 0 0;
 }
 .listTile{
     width: 100%;
     height: 40px;
-    background-color: rgba(225,225,225,1);
-    box-shadow: 0px 2px 35px black;
+    background: linear-gradient(rgba(51,143,11,1),rgba(108,186,4,1));
+    box-shadow: 0px 2px 35px gray;
 }
 .littlePic{
     margin-top: 10px;
@@ -82,9 +90,10 @@ body{
 }
 .comment{
     width: 100%;
-    background-color: rgba(225,225,225,1);
+    background: linear-gradient(rgba(51,143,11,1),rgba(108,186,4,1));
     height: 190px;
     margin-top: 6px;
+    color: white;
 }
 .about{
     width: 30%;
@@ -112,6 +121,7 @@ body{
     height: 80px;
     background-color: rgba(64,64,64,0.7);
     position: absolute;
+    box-shadow: 2px 2px 8px white;
 }
 #pic1{
      position: relative;

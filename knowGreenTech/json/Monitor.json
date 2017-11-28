@@ -1,0 +1,47 @@
+[
+  {
+    "index": 1,
+    "name": "illumination",
+    "data": 2.5
+  },
+  {
+    "index": 2,
+    "name": "humidity",
+    "data": 2.6
+  },
+  {
+    "index": 3,
+    "name": "co2",
+    "data": 2.7
+  },
+  {
+    "index": 4,
+    "name": "soil_humidity1",
+    "data": 2.8
+  },
+  {
+    "index": 5,
+    "name": "soil_humidity2",
+    "data": 2.9
+  },
+  {
+    "index": 6,
+    "name": "temperature",
+    "data": 3
+  },
+  {
+    "index": 7,
+    "name": "ph",
+    "data": 3.1
+  },
+  {
+    "index": 8,
+    "name": "soil_moisture1",
+    "data": 3.2
+  },
+  {
+    "index": 9,
+    "name": "soil_moisture2",
+    "data": 3.3
+  }
+]

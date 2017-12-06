@@ -97,29 +97,29 @@
     </div>
     <div class="banner bar1">
         <div class="comment">
-            <div style="position: absolute;margin: -70px 0 0 -70px;display: inline-block"><img src="images/account.png" alt="" style="transform: scale(0.15,0.15)"></div>
-            <div style="display:inline-block;font-size: 22px;margin: 18px 0 0 50px"><b>无量哥</b></div>
-            <div style="display:inline-block;font-size: 22px;margin: 18px 0 0 150px"><b>2017-11-19</b></div>
-            <div class="content"><p>自2011年以来，国家进一步加大了对农产品批发市场的关注力度，各项政策密集出台。《国务院办公厅关于促进物流业健康发展政策措施的意见》（国办发〔2011〕38号）、《国务院办公厅关于加强鲜活农产品流通体系建设的意见》（国办发〔2011〕59号）、《国务院关于深化流通体制改革加快流通产业发展的意见》</p></div>
+            <div style="position: absolute;margin: -70px 0 0 -70px;display: inline-block" id="a1"><img src="images/account.png" alt="" style="transform: scale(0.15,0.15)"></div>
+            <div style="display:inline-block;font-size: 22px;margin: 18px 0 0 50px" id="a2"><b></b></div>
+            <div style="display:inline-block;font-size: 22px;margin: 18px 0 0 150px" id="a3"><b></b></div>
+            <div class="content" ><p id="a4"></p></div>
         </div>
         <!--<p class="inBox">123</p>-->
     </div>
     <div class="banner bar2">
         <!--<p class="inBox">123</p>-->
         <div class="comment">
-            <div style="position: absolute;margin: -70px 0 0 -70px;display: inline-block"><img src="images/account.png" alt="" style="transform: scale(0.15,0.15)"></div>
-            <div style="display:inline-block;font-size: 22px;margin: 18px 0 0 50px"><b>小叮当</b></div>
-            <div style="display:inline-block;font-size: 22px;margin: 18px 0 0 150px"><b>2017-11-19</b></div>
-            <div class="content"><p>据商务部调查统计，截止2013年底，全国共有农产品批发市场4476家，年成交总额37414.4亿元，同比增长18.6%；年成交量78138.7万吨，同比增长9.5%；市场总摊位数246.8万个，同比增长11.7%，其中固定摊位170.7万个，非固定摊位75.1万个；总交易面积15268.5万平方米，同比增长12.5%，其中交易厅棚面积9623.4万平方米，露天交易面积5644.1万平方米；经销商共计213.9万个，同比增长7.8%，从业人员646.4万人，同比增长9.1%。据国家统计局统计，2013年年交易额亿元以上农产品批发市场为1759家。</p></div>
+            <div style="position: absolute;margin: -70px 0 0 -70px;display: inline-block" id="b1"><img src="images/account.png" alt="" style="transform: scale(0.15,0.15)"></div>
+            <div style="display:inline-block;font-size: 22px;margin: 18px 0 0 50px" id="b2"><b></b></div>
+            <div style="display:inline-block;font-size: 22px;margin: 18px 0 0 150px" id="b3"><b></b></div>
+            <div class="content" ><p id="b4"></p></div>
         </div>
     </div>
     <div class="banner bar3">
         <!--<p class="inBox">123</p>-->
         <div class="comment">
-            <div style="position: absolute;margin: -70px 0 0 -70px;display: inline-block"><img src="images/account.png" alt="" style="transform: scale(0.15,0.15)"></div>
-            <div style="display:inline-block;font-size: 22px;margin: 18px 0 0 50px"><b>flaskmap</b></div>
-            <div style="display:inline-block;font-size: 22px;margin: 18px 0 0 150px"><b>2017-11-19</b></div>
-            <div class="content"><p>我国东部地区农产品批发市场较之中西部地区具有数量多、规模大的特点。东部地区人口密度高，农业和交通运输业基础好，商品经济较发达，农产品批发市场数量占全国总数量的43.6%，最大经营面积为121万平方米。全国城市农贸中心联合会2013年公布的百强市场中，名列前五的省份分别为：广东13家、北京12家、江苏9家、山东8家、辽宁7家，均分布在我国东部及沿海地区。中部地区农产品批发市场数量占全国总数的30.3%,河南以拥有6家百强市场的实力位居第六。</p></div>
+            <div style="position: absolute;margin: -70px 0 0 -70px;display: inline-block" id="c1"><img src="images/account.png" alt="" style="transform: scale(0.15,0.15)"></div>
+            <div style="display:inline-block;font-size: 22px;margin: 18px 0 0 50px" id="c2"><b></b></div>
+            <div style="display:inline-block;font-size: 22px;margin: 18px 0 0 150px" id="c3"><b></b></div>
+            <div class="content" ><p id="c4"></p></div>
         </div>
     </div>
 
@@ -127,5 +127,41 @@
     <div style="text-align: center;margin-top: -20px"><img src="images/downArrow.png" alt=""></div>
     <div style="text-align: center;margin-top: -10px"><img src="images/downArrow.png" alt=""></div>
 </div>
+<!--json的传值-->
+<script>
+    var a2 = document.getElementById("a2");
+    var b2 = document.getElementById("b2");
+    var c2 = document.getElementById("c2");
+    var a3 = document.getElementById("a3");
+    var b3 = document.getElementById("b3");
+    var c3 = document.getElementById("c3");
+    var a4 = document.getElementById("a4");
+    var b4 = document.getElementById("b4");
+    var c4 = document.getElementById("c4");
+
+    var jsons = '[{"user_id": 1,"user_name": "无量哥","time": "2017-11-19","message": "自2011年以来，国家进一步加大了对农产品批发市场的关注力度，各项政策密集出台。《国务院办公厅关于促进物流业健康发展政策措施的意见》（国办发〔2011〕38号）、《国务院办公厅关于加强鲜活农产品流通体系建设的意见》（国办发〔2011〕59号）、《国务院关于深化流通体制改革加快流通产业发展的意见》"},{"user_id": 2,"user_name": "小叮当","time": "2017-11-19","message": "据商务部调查统计，截止2013年底，全国共有农产品批发市场4476家，年成交总额37414.4亿元，同比增长18.6%；年成交量78138.7万吨，同比增长9.5%；市场总摊位数246.8万个，同比增长11.7%，其中固定摊位170.7万个，非固定摊位75.1万个；总交易面积15268.5万平方米，同比增长12.5%，其中交易厅棚面积9623.4万平方米，露天交易面积5644.1万平方米；经销商共计213.9万个，同比增长7.8%，从业人员646.4万人，同比增长9.1%。据国家统计局统计，2013年年交易额亿元以上农产品批发市场为1759家。"},{"user_id": 3,"user_name": "flaskmap","time": "2017-11-19","message": "我国东部地区农产品批发市场较之中西部地区具有数量多、规模大的特点。东部地区人口密度高，农业和交通运输业基础好，商品经济较发达，农产品批发市场数量占全国总数量的43.6%，最大经营面积为121万平方米。全国城市农贸中心联合会2013年公布的百强市场中，名列前五的省份分别为：广东13家、北京12家、江苏9家、山东8家、辽宁7家，均分布在我国东部及沿海地区。中部地区农产品批发市场数量占全国总数的30.3%,河南以拥有6家百强市场的实力位居第六。"}]';
+    var obj = JSON.parse(jsons);
+    name1 = obj[0].user_name;
+    name2 = obj[1].user_name;
+    name3 = obj[2].user_name;
+    time1 = obj[0].time;
+    time2 = obj[1].time;
+    time3 = obj[2].time;
+    message1 = obj[0].message;
+    message2 = obj[1].message;
+    message3 = obj[2].message;
+    a2.innerHTML = name1;
+    b2.innerHTML = name2;
+    c2.innerHTML = name3;
+
+    a3.innerHTML = time1;
+    b3.innerHTML = time2;
+    c3.innerHTML = time3;
+
+    a4.innerHTML = message1;
+    b4.innerHTML = message2;
+    c4.innerHTML = message3;
+
+</script>
 </body>
 </html>

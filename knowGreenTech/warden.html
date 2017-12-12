@@ -8,63 +8,20 @@
             margin: 0;
             padding: 0;
         }
-        .header {
-            width: 600px;
-            height: 600px;
-            margin: -100px 0 0 500px;
-            transform: scale(0.7,0.7);
-            position: relative;
-        }
-        .header div {
-            height: 300px;
-            width: 300px;
-            /*background: rgba(106,72,149,1);*/
-            background: rgba(245,49,34,1);
-            border-radius: 300px 0;
-            position: absolute;
-            bottom: 100px;
-            left:200px;
-            opacity:0.7;
-            transform-origin:0 300px;
-            transform:rotate(-45deg);
-            transition:all 8s;
-        }
-        .header .header1{
-            transform:rotate(51.4deg);
-        }
-        .header .header2{
-            transform:rotate(102.8deg);
-        }
-        .header .header3{
-            transform:rotate(154.2deg);
-        }
-        .header .header4{
-            transform:rotate(205.6deg);
-        }
-        .header .header5{
-            transform:rotate(257deg);
-        }
-        .header .header6{
-            transform:rotate(308.4deg);
-        }
-        .header .header7{
-            transform:rotate(360deg);
-        }
         p{
             font-size: 20px;
             color: white;
             font-family: 'Varela Round', cursive;
         }
-        .font{position: absolute}
-        .font1{ margin: -356px 0 0 664px }
-        .font2{ margin: -298px 0 0 786px }
-        .font3{ margin: -175px 0 0 818px }
-        .font4{ margin: -58px 0 0 771px }
-        .font5{ margin: -58px 0 0 638px }
-        .font6{ margin: -141px 0 0 514px }
-        .font7{ margin: -276px 0 0 572px }
         #fontContainer{
             /*opacity: 0;*/
+            width: 80%;
+            height: 566px;
+            background: linear-gradient(rgba(28,45,61,1),rgba(66,92,117,0.7));
+            margin: auto;
+            margin-top: 50px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 12px gray;
         }
         a{
             text-decoration: none;
@@ -75,6 +32,58 @@
             width: 100%;
             height: 100px;
         }
+        .row{
+            width: 25%;
+            height: 160px;
+            background-color: red;
+            margin-top: 20px;
+            margin-left: 20px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px gray;
+        }
+        .row1{
+            display: inline-block;
+        }
+        .row2{
+            display: inline-block;
+        }
+        .row3{
+            display: inline-block;
+        }
+        .Middlebox{
+            position: relative;
+            left: 110px;
+        }
+        #R1{background-color: rgba(112,189,155,1);}
+        #R2{background-color: rgba(241,199,185,1);}
+        #R3{background-color: rgba(0,158,183,1);}
+        #R4{background-color: rgba(0,129,184,1);}
+        #R5{background-color: rgba(237,166,114,1);}
+        #R6{background-color: rgba(126,203,211,1);}
+        #R7{background-color: rgba(247,151,162,1);}
+        #R8{background-color: rgba(219,86,81,1);}
+        #R9{background-color: rgba(255,200,110,1);}
+.c1{
+    position: absolute;
+    font-size: 32px;
+    padding: 26px 0 0 51px;
+}
+.c2{
+    position: absolute;
+    font-size: 32px;
+    padding: 26px 0 0 100px;
+}
+.b{
+    width: 50px;
+    height: 80px;
+    background:linear-gradient(to bottom left,rgba(255,255,255,0) 50%,rgba(255,255,169,1) 50%);
+    position: absolute;
+    margin-top: -10px;
+    margin-left: 242px;
+    transform:rotate(-20deg);
+    box-shadow:0px 2px 12px gray;
+
+}
     </style>
 </head>
 <body background="images/bgpic.jpg">
@@ -86,23 +95,21 @@
         <img src="images/tele.png" alt="" style="transform: scale(1,1);position:relative;top: -350px;margin-left: 1085px">
     </div>
 </div>
-<div class="header">
-    <div class="header1"></div>
-    <div class="header2"></div>
-    <div class="header3"></div>
-    <div class="header4"></div>
-    <div class="header5"></div>
-    <div class="header6"></div>
-    <div class="header7"></div>
-</div>
 <div class="fontContainer" id="fontContainer">
-    <div class="font font1"><p><a href="automatization.html">自动化控制</a></p></div>
-    <div class="font font2"><p><a href="modification.html">登录注册修改</a></p></div>
-    <div class="font font3"><p><a href="video.html">种植区实时视频</a></p></div>
-    <div class="font font4"><p><a href="experts.html">专家建议</a></p></div>
-    <div class="font font5"><p><a href="information_push.html">消息推送</a></p></div>
-    <div class="font font6"><p><a href="respond.html">回复用户建议</a></p></div>
-    <div class="font font7"><p><a href="index.html">主页</a></p></div>
+    <div class="Middlebox">
+        <a href="automatization.html"><div class="row row1" id="R1"><p class="c1">自动化的控制</p><div class="b"></div></div></a>
+        <a href="admin_login.html"><div class="row row1" id="R2"><p class="c1">登录注册修改</p><div class="b"></div></div></a>
+        <a href="video.html"><div class="row row1" id="R3"><p class="c1">种植实时视频</p><div class="b"></div></div></a>
+
+        <a href="experts.html"><div class="row row2" id="R4"><p class="c1">专家们的建议</p><div class="b"></div></div></a>
+        <a href="information_push.html"><div class="row row2" id="R5"><p class="c1">关于消息推送</p><div class="b"></div></div></a>
+        <a href="respond.html"><div class="row row2" id="R6"><p class="c1">回复用户建议</p><div class="b"></div></div></a>
+
+        <a href="index.html"><div class="row row3" id="R7"><p class="c2">主页...</p><div class="b"></div></div></a>
+        <a href=""><div class="row row3" id="R8"><p class="c2">.......</p><div class="b"></div></div></a>
+        <a href=""><div class="row row3" id="R9"><p class="c2">.......</p><div class="b"></div></div></a>
+    </div>
+
 
 </div>
 <!--<script>-->

@@ -1,0 +1,25 @@
+{
+  "id": 1,
+  "banners": [
+  ],
+  "goods_data": {
+    "name": "核桃",
+    "description": "这是核桃",
+    "price": "1.1"
+  },
+  "tabs": [
+    {
+      "name": "商品详情",
+      "detail": [
+      ]
+    },
+    {
+      "name": "参数详情",
+      "detail": [
+        "核桃",
+        "1.1",
+        "浙江金华"
+      ]
+    }
+  ]
+}

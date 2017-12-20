@@ -13,9 +13,11 @@
 <body background="images/bgpic.jpg">
 <div class="warden" id="warden">
     <div><p style="font-family: 'Varela Round', cursive;padding-top: 60px;color: white">
-        <a href="warden.html" style="text-decoration: none;color: white;display: block;opacity: 0;color: white" id="wardenLogin">管理员登录</a>
+        <a href="warden.html" style="text-decoration: none;color: white;display: block;opacity: 0;color: white"
+           id="wardenLogin">管理员登录</a>
     </p></div>
-    <div><img src="images/logo.png" alt="" style="transform: scale(0.1,0.1);margin-left: -238px;margin-top: -360px;opacity: 0" id="logoImg">
+    <div><img src="images/logo.png" alt=""
+              style="transform: scale(0.1,0.1);margin-left: -238px;margin-top: -360px;opacity: 0" id="logoImg">
     </div>
 </div>
 <div class="outBox">
@@ -36,10 +38,15 @@
         </div>
     </div>
     <div class="title">
-        <div class="marquee" style="width: 90%;font-family: 'Varela Round', cursive;font-size: 25px;color: white;padding-top: 20px;padding-left: 20px">
-        <marquee class="noticeText ng-binding" direction="right" behavior="alternate" scrollamount="100" scrolldelay="1000" loop="1000" width="600px" onmouseover="this.stop();" onmouseout="this.start();"  style="width: 100%;">欢迎来到智慧农业网站，本网站提供最新的农产品动态，你想要的信息尽在智慧农业</marquee>
+        <div class="marquee"
+             style="width: 90%;font-family: 'Varela Round', cursive;font-size: 25px;color: white;padding-top: 20px;padding-left: 20px">
+            <marquee class="noticeText ng-binding" direction="right" behavior="alternate" scrollamount="100"
+                     scrolldelay="1000" loop="1000" width="600px" onmouseover="this.stop();" onmouseout="this.start();"
+                     style="width: 100%;">欢迎来到智慧农业网站，本网站提供最新的农产品动态，你想要的信息尽在智慧农业
+            </marquee>
         </div>
-        <a href="Qr%20code.html"><img src="images/知绿科技二维码.png" alt="" style="position: absolute;transform: scale(0.2,0.2);margin: -165px 0 0 1021px"></a>
+        <a href="Qr%20code.html"><img src="images/知绿科技二维码.png" alt=""
+                                      style="position: absolute;transform: scale(0.2,0.2);margin: -165px 0 0 1021px"></a>
     </div>
     <div class="message" style=" height: 381px;">
         <div class="scroll">
@@ -79,7 +86,8 @@
         </div>
         <div class="information1" style=" height: 381px;">
             <div class="listTile" style="border-radius: 6px 6px 0 0">
-                <p style="position: absolute;margin-left: 5px;margin-top: 10px;font-size: 18px"><b style="color: white">实时状态查询</b></p>
+                <p style="position: absolute;margin-left: 5px;margin-top: 10px;font-size: 18px"><b style="color: white">实时状态查询</b>
+                </p>
             </div>
             <div class="littlePic">
                 <img src="images/little2.png" alt="" style="transform: scale(0.87,1);margin-left: -16px">
@@ -110,7 +118,8 @@
         </div>
         <div class="information2" style=" height: 381px;">
             <div class="listTile" style="border-radius: 6px 6px 0 0">
-                <p style="position: absolute;left: 5px;top: -7px;font-size: 18px"><b style="color: white">智慧农业的体现</b></p>
+                <p style="position: absolute;left: 5px;top: -7px;font-size: 18px"><b style="color: white">智慧农业的体现</b>
+                </p>
             </div>
             <div class="littlePic">
                 <img src="images/little1.png" alt="" style="transform: scale(0.75,1);margin-left: -31px">
@@ -185,21 +194,21 @@
     <script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>
     <script src="/follow.js" type="text/javascript"></script>
     <script>
-            var wardenLogin = document.getElementById("wardenLogin");
-            var logoImg = document.getElementById("logoImg");
-            wardenLogin.onmouseover = function W1() {
-                wardenLogin.style.cssText = "opacity:1";
-                logoImg.style.cssText = "opacity:1";
-                logoImg.style.cssText = "margin-left:-238px;margin-top :-360px";
-                logoImg.style.transform = "scale(0.1,0.1)";
-            }
-            wardenLogin.onmouseout = function W2() {
-                wardenLogin.style.cssText = "opacity:0";
-                logoImg.style.cssText = "opacity:0";
-                logoImg.style.cssText = "margin-left:-238px;margin-top :-360px";
-                logoImg.style.transform = "scale(0.1,0.1)";
-            }
-            var timer = setTimeout(W1,2000);
+        var wardenLogin = document.getElementById("wardenLogin");
+        var logoImg = document.getElementById("logoImg");
+        wardenLogin.onmouseover = function W1() {
+            wardenLogin.style.cssText = "opacity:1";
+            logoImg.style.cssText = "opacity:1";
+            logoImg.style.cssText = "margin-left:-238px;margin-top :-360px";
+            logoImg.style.transform = "scale(0.1,0.1)";
+        };
+        wardenLogin.onmouseout = function W2() {
+            wardenLogin.style.cssText = "opacity:0";
+            logoImg.style.cssText = "opacity:0";
+            logoImg.style.cssText = "margin-left:-238px;margin-top :-360px";
+            logoImg.style.transform = "scale(0.1,0.1)";
+        };
+        var timer = setTimeout(W1, 2000);
     </script>
 </div>
 </body>

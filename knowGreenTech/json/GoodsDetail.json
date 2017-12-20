@@ -1,0 +1,33 @@
+{
+  "id": 1,
+  "banners": [
+    "http://123.207.214.129/image/nut/01.jpg",
+    "http://123.207.214.129/image/nut/02.jpg",
+    "http://123.207.214.129/image/nut/03.jpg",
+    "http://123.207.214.129/image/nut/04.jpg"
+  ],
+  "goods_data": {
+    "name": "核桃",
+    "description": "这是核桃",
+    "price": "1.1"
+  },
+  "tabs": [
+    {
+      "name": "商品详情",
+      "detail": [
+        "http://123.207.214.129/image/nut/05.jpg",
+        "http://123.207.214.129/image/nut/06.jpg",
+        "http://123.207.214.129/image/nut/07.jpg",
+        "http://123.207.214.129/image/nut/08.jpg"
+      ]
+    },
+    {
+      "name": "参数详情",
+      "detail": [
+        "核桃",
+        "1.1",
+        "浙江金华"
+      ]
+    }
+  ]
+}
